@@ -1,0 +1,107 @@
+body {
+    display: grid;
+    background-color:black;
+    color:honeydew;
+    text-align: center; 
+    animation: opacityOn 2.5s;  
+}
+@keyframes title {
+    from {text-shadow: none;}
+    to {text-shadow: 5px 5px blue;}
+}
+.homeButton {
+    width:fit-content;
+    background:none;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px rgb(0, 78, 0);
+    background-color: whitesmoke;
+    color: darkslategray
+   
+  }
+  a {
+    text-decoration:none;
+  }
+
+.return {
+    margin-top: 40px;
+    color: blue;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    animation-name: title;
+    animation-duration: 7s;
+    text-shadow: 5px 5px blue;
+}
+
+@keyframes opacityOn {
+    0% {
+        opacity: 0;
+    }
+   100% {
+       opacity: 1;
+   }
+}
+
+p {
+    font-size: 20px;
+    
+}
+input {
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    background-color:darkgrey;
+    color: white
+    
+    
+}
+#secondField {
+    display: none;
+    animation: opacityOn 2.5s; 
+}
+
+
+#answer {
+    font-size: 50px;
+    display: none;
+    animation: opacityOn 3s;
+    margin-top: -1px; 
+    font-style:italic;
+    text-shadow: rgb(0, 78, 0) 5px 5px ;
+}
+
+
+button {
+  width: 200px;
+  height: 57px;
+  padding: 20px 20px;
+  border-radius: 0px;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 15px;
+  box-shadow: 5px 5px whitesmoke;
+  background-color:rebeccapurple;
+  color: white;
+  transition-property: box-shadow;
+  transition-duration: 1s;
+  
+}
+button:hover {
+    box-shadow: 5px 5px blue;
+    background-color:whitesmoke;
+    color: darkslategray
+    
+}

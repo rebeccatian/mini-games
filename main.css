@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "Pixel";
+    src: url('font/PressStart2P-vaV7.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Pixel';
+    background: url('wallhaven-o3ly8p_2560x1440.png') no-repeat center center fixed;
+    color:hotpink;
+    animation: growIn 500ms ease-in-out forwards;
+}
+
+main {
+    max-width: 80%;
+    margin: 90px auto;
+    height: 500px;
+    padding: 30px 15px 30px 15px;
+    border: 3px solid rgb(72, 0, 254);
+    border-radius: 3px;
+    background-color:rgba(46, 0, 121, 0.927);
+    text-align: center;
+}
+
+.container {
+    margin: 200px auto;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        margin: 50px auto;
+    }
+
+    button .game-name {
+        font-size:small;
+    }
+
+    .paper {
+        display: none;
+    }
+
+    .scissors {
+        display: none;
+    }
+
+    main {
+        margin-top: 80px;
+    }
+}
+
+.option {
+    padding: 10px;
+    max-width: 70%;
+    flex: 3;
+    margin: auto 15px 20px 15px;
+    height: 150px;
+    border: 3px solid rgb(120, 75, 252);
+    border-radius: 3px;
+    color: rgb(120, 75, 252);
+    font-family: 'Pixel';
+    transition: background-color 300ms ease-in;
+}
+
+.option:hover {
+    background-color: #78236fd8;
+    cursor: pointer;
+}
+
+button {
+    border: 0;
+    background: none;
+    transition: opacity 200ms ease-in-out;
+}
+
+button:disabled {
+    opacity: 0;
+}
+
+.game-name {
+    font-size: larger;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 100;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+@keyframes growIn {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.animate-in{
+    animation: fadeIn 300ms ease-in-out forwards;
+}
+
+.animate-out {
+    animation: fadeOut 300ms ease-in-out forwards
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Welcome to my Mini-Games</h1>
+            <p style="font-size: 16px;">Made using pure HTML, CSS, and vanilla JS</p>
+        </header>
+        <div class="container">
+            <button class="prev" onclick="prev()">
+                <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 3.75317L21.5509 20.2501H2.44922L12.0001 3.75317ZM5.05089 18.7501H18.9492L12.0001 6.74697L5.05089 18.7501Z" fill="rgb(120, 75, 252)"></path> </g></svg>
+            </button>
+            <button onclick="location.href='rock-paper-scissors/index.html'" class="option rock-game">
+                <p class="game-name">ROCK, PAPER, SCISSORS</p>
+                <svg width="64px" height="64px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="rgb(120, 75, 252)" stroke="rgb(120, 75, 252)" stroke-width="1.8719999999999999"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.a{fill:none;stroke:rgb(120, 75, 252);stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="a" d="M9.79,37.62,27.91,43.5,14.63,27.86l20.59-8.34-7.31,24L43.5,31.27,35.22,19.52l6.12-6.46L21.64,4.5l13.58,15"></path><path class="a" d="M14.63,27.86,9.79,37.62,4.5,20.27,21.64,4.5Z"></path><path class="a" d="M14.63,27.86,4.5,20.27"></path><path class="a" d="M43.5,31.27,41.34,13.06"></path></g></svg>
+                <svg class="paper" width="64px" height="64px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="rgb(120, 75, 252)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M1 21h22V3H1zM2 4h20v16H2z"></path><path fill="none" d="M0 0h24v24H0z"></path></g></svg>
+                <svg class="scissors" width="64px" height="64px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="none" fill-rule="evenodd"> <path d="m0 0h32v32h-32z"></path> <path d="m4.16987298 3.97205081 7.79422862 4.5-2.50122862 4.33099999 3.53700002 2.041 15.9546097-9.2100762 1 1.7320508-14.9546097 8.6330254 14.9546097 8.6349238-1 1.7320508-15.9546097-9.2119746-3.53400002 2.04 2.49822862 4.328127-7.79422862 4.5-3.5-6.0621778 7.79422864-4.5.00177136.0020508 2.53400002-1.463-7.16012704-4.1330254.00012702-.0019746-3.17-1.8298222z" fill="rgb(120, 75, 252)"></path> </g> </g></svg>
+            </button>
+            <button onclick="location.href='tic-tac-toe/index.html'" class="option tic-tac hidden">
+                <p class="game-name">TIC TAC TOE</p>
+                <p style="font-size: 30px; margin: 0;">X O</p>
+            </button>
+            <button onclick="location.href='eight-ball/index.html'" class="option tic-tac hidden">
+                <p class="game-name">8-BALL</p>
+                <svg fill="rgb(120, 75, 252)" width="64px" height="64px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g data-name="Magic Ball" id="Magic_Ball"> <path d="M14.34,17a9.38,9.38,0,0,1,2.51,1.88A17,17,0,0,0,14,28.33a17.21,17.21,0,0,0,2.09,8.18,9.28,9.28,0,0,1-1.51,4.87c-.76,1.16-1.26,1.93-.81,2.71s1.37.74,2.76.66a9,9,0,0,1,2.26.15l-.88,4.88A3.61,3.61,0,0,0,18,57h26.3a3.61,3.61,0,0,0,.07-7.22l-1.61-8.89a16.95,16.95,0,0,0,4.78-17.47,9.19,9.19,0,0,1,2.14-1.53c1.24-.62,2.06-1,2.06-1.94S50.9,18.63,49.66,18a9.26,9.26,0,0,1-4.07-4.07c-.63-1.24-1-2.06-2-2.06s-1.32.82-1.94,2.06c-.11.22-.26.43-.39.64a17.06,17.06,0,0,0-16.22-2.25A9.14,9.14,0,0,1,22.3,9.06C21.68,7.82,21.27,7,20.36,7S19,7.82,18.41,9.06a9.26,9.26,0,0,1-4.07,4.07c-1.24.63-2.06,1-2.06,1.95S13.1,16.4,14.34,17Zm2.07,25.73-.34,0a2.43,2.43,0,0,1,.19-.29,11.28,11.28,0,0,0,1.81-6.78c0-.1,0-.22,0-.35l.3.19a11.24,11.24,0,0,0,6.77,1.82l.35,0c-.07.11-.13.21-.19.29a11.39,11.39,0,0,0-1.81,6.78c0,.1,0,.22,0,.35l-.29-.19A11.27,11.27,0,0,0,16.41,42.75ZM45.89,53.39A1.61,1.61,0,0,1,44.28,55H18a1.62,1.62,0,1,1,0-3.23h26.3A1.62,1.62,0,0,1,45.89,53.39Zm-3.57-3.62H19.94l.78-4.27a8.6,8.6,0,0,1,1.37.74,4.49,4.49,0,0,0,2.09,1,1.22,1.22,0,0,0,.63-.17c.75-.43.73-1.29.66-2.57A17,17,0,0,0,41,42.33Zm1.17-34.94c0-.09.09-.2.15-.31.06.11.12.22.16.31a11.22,11.22,0,0,0,5,5l.32.16-.32.16a11.22,11.22,0,0,0-5,5c0,.09-.1.2-.16.31-.06-.11-.11-.22-.15-.31a11.24,11.24,0,0,0-5-5L38.21,20l.31-.16A11.44,11.44,0,0,0,43.49,14.83ZM40.1,16.16A9,9,0,0,1,37.62,18h0c-1.23.63-2,1-2,1.95s.82,1.32,2,1.94A9.25,9.25,0,0,1,41.7,26c.62,1.24,1,2.05,1.94,2.05s1.32-.81,2-2.05c.1-.21.24-.4.36-.6a14.73,14.73,0,0,1,.31,3,15.09,15.09,0,0,1-20.7,14.05A9.23,9.23,0,0,1,27,38.73c.76-1.16,1.27-1.93.81-2.71s-1.37-.74-2.75-.66a9.24,9.24,0,0,1-5.57-1.49c-1.14-.75-1.9-1.25-2.68-.82A15.12,15.12,0,0,1,40.1,16.16ZM15.24,14.92a11.27,11.27,0,0,0,5-5c0-.09.1-.2.16-.31.06.11.11.22.15.31A11.4,11.4,0,0,0,23,13.24a17.35,17.35,0,0,0-5,4,11.37,11.37,0,0,0-2.83-2.05l-.32-.15Z"></path> <path d="M36.57,37.86A3.6,3.6,0,1,0,33,34.26,3.6,3.6,0,0,0,36.57,37.86Zm0-5.19A1.6,1.6,0,1,1,35,34.26,1.59,1.59,0,0,1,36.57,32.67Z"></path> <path d="M20.8,27.94a1,1,0,0,0,1-1,7.59,7.59,0,0,1,7.58-7.58,1,1,0,0,0,0-2,9.59,9.59,0,0,0-9.58,9.58A1,1,0,0,0,20.8,27.94Z"></path> </g> </g></svg>
+            </button>
+            <button class="next" onclick="next()"><svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(90)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 3.75317L21.5509 20.2501H2.44922L12.0001 3.75317ZM5.05089 18.7501H18.9492L12.0001 6.74697L5.05089 18.7501Z" fill="rgb(120, 75, 252)"></path> </g></svg></button>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

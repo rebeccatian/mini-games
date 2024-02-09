@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eight Ball</title>
+    <link rel="stylesheet" href=eightBall.css>
+
+</head>
+<body>
+
+    <button onclick="location.href='../index.html'" class = "homeButton">
+        Home
+    </button>
+
+    <h1>Magic Eight Ball</h1>
+
+    <div class = content>
+    <p>What is your name?</p>
+    <br>
+
+        <input type="text" id="name" name="name" size="10">
+        <br>
+        <button type="button" onclick="myFunction()">Submit</button>
+
+        <div id = "secondField">
+
+        <p id = "intro"></p>
+            <input type="text" id="question" name="name" size="10">
+            <br>
+            <button type="button" onclick="questionFunction()">Submit</button>
+            <div id = "answer">
+            <p></p>
+        </div>
+            </div>
+
+        </div>
+           
+    
+    <script src="eightBall.js"></script>
+</body>
+</html>
